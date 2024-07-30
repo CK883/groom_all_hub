@@ -1,0 +1,4 @@
+APP_API_ENDPOINT = 'https://viriyah-fl4-api.dev.ucconnect.co.th/api/v1'
+APP_WEB_SOCKET_ENDPOINT = 'https://viriyah-fl4-api.dev.ucconnect.co.th/'
+SIP_DOMAIN=webrtc.ucconnect.co.th
+SIP_PORT=8089

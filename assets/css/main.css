@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main-primary: #0033A2;
+    --base-gray-lighten: #f0f0f0;
+    --base-gray-darken: #A7A7A8;
+}
+
+body {
+    background-color: #F9FBFF !important;
+}
+
+.first-upper-case {
+    text-transform: capitalize;
+}
+
+/* margin left*/
+.ml-100 {
+    margin-left: 26rem;
+}
+
+.ml-102 {
+    margin-left: 28rem;
+}
+
+.ml-104 {
+    margin-left: 30rem;
+}
+
+
+input[type="radio"]:checked {
+    background-size: 1.5em 2em;
+}
+
+select {
+    height: 34px;
+}
+
+input {
+    height: 34px;
+    @apply cursor-pointer
+}
+
+select {
+    @apply cursor-pointer
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #98b9ff;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #98b9ff/10;
+}
+
+.cut-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    height: 1.2em;
+    white-space: nowrap;
+}
+
+
+
+.fc .fc-button-primary {
+    background-color: white;
+    color: var(--main-primary);
+}
+
+.fc .fc-today-button {
+    margin-left: 4% !important;
+    border-radius: 10% !important;
+    background-color: white;
+    color: var(--main-primary);
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+    background: var(--main-primary) !important;
+}
+
+
+
+#app, body, .vs-button, .vs-textarea, vs-input, vs-select, vs-select-item .vs-table, .vs-row, .vs-col, .title,
+h1, h2, h3, h4, h5, h6, p, template, span, tr, td, p, label {
+    font-family: 'DB Sathorn X', sans-serif !important;
+}
+
+.div-box {
+    @apply border-base-gray-lighten border rounded-lg p-2
+}
+
+.div-box.active {
+    @apply !border-main-primary border-2 ring-2 p-2 rounded-lg
+}
+
+.btn-box {
+    @apply border-base-gray-lighten border rounded-full p-1
+}
+
+.input-checkbox {
+    @apply cursor-pointer text-main-primary bg-base-white border-base-gray-lighten rounded w-5 h-5 focus:ring-main-blue
+}
+
+.campaign-table {
+    @apply rounded-xl border border-base-gray-lighten overflow-x-auto
+}
+
+.campaign-table-thead {
+    @apply bg-main-base text-main-primary font-bold text-nowrap
+}
+
+.campaign-table-thead th {
+    @apply hover:bg-main-primary/10 py-0.5 px-2
+}
+
+.campaign-table-tbody {
+    @apply text-base-black font-bold border-b border-base-gray-lighten hover:bg-main-primary/[.03]
+}
+
+.campaign-table-tbody td {
+    @apply p-2
+}
+
+.div-pill {
+    @apply border border-base-gray-lighten bg-base-white rounded-full h-fit w-fit px-2 py-0
+}
+
+.hr-y {
+    @apply border-s border-base-gray-lighten
+}
+
+.input-radio-box {
+    @apply cursor-pointer border rounded-lg hover:border-main-primary hover:ring-2 hover:!ring-main-primary/[.2]
+}
+
+.input-radio-box.active {
+    @apply border-main-primary ring-2 ring-main-lighten
+}
+
+.input-radio-box input[type="radio"] {
+    @apply w-5 h-5 border-base-gray-lighten text-main-primary focus:ring focus:ring-transparent
+}
