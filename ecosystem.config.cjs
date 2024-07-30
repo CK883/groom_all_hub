@@ -1,6 +1,6 @@
 module.exports = {
         apps: [{
-                name: 'VIRIYAH-FL4-FRONT',
+                name: 'GROOM ALL HUB',
                 script: 'pnpm run dev',
                 // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
                 args: 'one two',

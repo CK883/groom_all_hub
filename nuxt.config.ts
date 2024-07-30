@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Viriyah',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      title: 'GROOM ALL HUB',
+      // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     }
   },
   postcss: {
