@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../document/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+      html {
+          -webkit-print-color-adjust: exact;
+      }
+
+      .font-style-content {
+          font: 40px Sarabun;
+          font-family: Sarabun !important;
+          color: #3b3b3b !important;
+          padding: 0px !important;
+          line-height: 100%;
+          text-align: left;
+      }
+
+      .vl {
+          border-right: 1px dashed #808080;
+          padding: 0 0.2em;
+          height: auto;
+      }
+
+      .metro-left-tab {
+          color: #fccaa7;
+          writing-mode: vertical-rl;
+          text-orientation: sideways;
+          font-weight: bold;
+          font-size: 55px;
+          letter-spacing: 10px;
+          height: 90vh;
+          font-family: 'Ubuntu', sans-serif;
+          margin-left: 10px;
+      }
+
+      body {
+          font: 12px Sarabun;
+          font-family: Sarabun !important;
+          line-height: 150%;
+      }
+
+      table {
+          border: 2px solid black;
+          border-collapse: collapse;
+      }
+
+      td {
+          font-size: 14px;
+      }
+
+      p {
+          margin-top: -10px;
+      }
+
+      .tdcar {
+          border: 1px solid black;
+          text-align: center;
+      }
+
+      .line {
+          padding-bottom: 7px;
+      }
+
+      .under-space {
+          padding-bottom: 5px;
+      }
+
+  </style>
+</head>
+<html class="" lang="en">
+
+<body style="margin: 0 0 0 0;">
+<div>
+  <div class="col-0">
+    <div class="row">
+      <div class="col-3">
+        <img
+          src="data:image/png;base64,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"
+          width="100%" align="left" style="margin-top: 40px;padding-left: 30px;" />
+      </div>
+      <div class="col-6">
+      </div>
+
+    </div>
+    <div>
+      <div style="margin-left:30px; margin-top: 10px;font-size: 10px">บริษัทวิริยะประกันภัย จำกัด (มหาชน) 121/28,
+        121/65 อาคารอาร์ เอส ทาวเวอร์
+        ถนนรัชดาภิเษก แขวงดินแดง เขตดินแดง กรุงเทพมหานคร 10400 โทร. 0 2129 8888 www.viriyah.co.th ทะเบียนเลขที่
+        0107555000139</div>
+      <div class="table" style="margin-top: 5px;padding-left: 30px;padding-right: 30px;">
+        <table style="width:100%;">
+          <tr style="border: 1px solid black;">
+            <th style="text-align: center;margin-top: 20px;margin-bottom: 20px;font-size: 19px">
+              คำขอเอาประกันภัยรถไฟฟ้า</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              <div class="row" style='padding-right: 10px'>
+                <div class="col-2 line">ผู้เอาประกันภัย ชื่อ:</div>
+                <div class='col-5 under-line '></div>
+                <div class="col-1 line">อาชีพ :</div>
+                <div class='col-4 under-line '></div>
+              </div>
+              <div class='row pt-3' style='padding-right: 10px'>
+                <div class='col-1 d-flex justify-content-end'></div>
+                <div class='col-1 d-flex p-0 '>ที่อยู่ : </div>
+                <div class='col-10 under-line '></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="row pr-3">
+                <div class="col-1">ชื่อผู้ขับขี่</div>
+                <div class="col-1">ผู้ขับขี่ 1.</div>
+                <div class="col-2 under-line"></div>
+                <div class="col-2">วัน/เดือน/ปีเกิด</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-1">อาชีพ</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-2">ใบอนุญาตขับขี่</div>
+                <div class="col-1 under-line"></div>
+              </div>
+              <div class="row  pr-3 pt-2">
+                <div class="col-1"></div>
+                <div class="col-1">ผู้ขับขี่ 2.</div>
+                <div class="col-2 under-line"></div>
+                <div class="col-2">วัน/เดือน/ปีเกิด</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-1">อาชีพ</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-2">ใบอนุญาตขับขี่</div>
+                <div class="col-1 under-line"></div>
+              </div>
+              <div class="row pr-3 pt-2">
+                <div class="col-1"></div>
+                <div class="col-1">ผู้ขับขี่ 3.</div>
+                <div class="col-2 under-line"></div>
+                <div class="col-2">วัน/เดือน/ปีเกิด</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-1">อาชีพ</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-2">ใบอนุญาตขับขี่</div>
+                <div class="col-1 under-line"></div>
+              </div>
+              <div class="row pr-3 pt-2">
+                <div class="col-1"></div>
+                <div class="col-1">ผู้ขับขี่ 4.</div>
+                <div class="col-2 under-line"></div>
+                <div class="col-2">วัน/เดือน/ปีเกิด</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-1">อาชีพ</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-2">ใบอนุญาตขับขี่</div>
+                <div class="col-1 under-line"></div>
+              </div>
+              <div class="row pr-3 pt-2">
+                <div class="col-1"></div>
+                <div class="col-1">ผู้ขับขี่ 5.</div>
+                <div class="col-2 under-line"></div>
+                <div class="col-2">วัน/เดือน/ปีเกิด</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-1">อาชีพ</div>
+                <div class="col-1 under-line"></div>
+                <div class="col-2">ใบอนุญาตขับขี่</div>
+                <div class="col-1 under-line"></div>
+              </div>
+              <div class="row pr-3 pt-2">
+                <div class="col-4 "></div>
+                <div class="col-8">(โปรดแนบสำเนาบัตรประจำตัวประชาชน ใบอนุญาตขับขี่)</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              <div class='row pr-3'>
+                <div class='col-2'>
+                    การใช้รถยนต์
+                </div>
+                <div class='col-10 under-line'>
+
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              <div class='row pr-3'>
+                <div class='col-2'>
+                  ผู้รับประโยชน์
+                </div>
+                <div class='col-10 under-line'>
+
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <table style="width:100%;border: 2px solid black;">
+            <tr>
+              <td class="tdcar tdPadding">ลำดับ</td>
+              <td class="tdcar tdPadding">รหัส</td>
+              <td class="tdcar tdPadding">ชื่อรถยนต์/รุ่น</td>
+              <td class="tdcar tdPadding">เลขทะเบียน</td>
+              <td class="tdcar tdPadding">เลขตัวถัง</td>
+              <td class="tdcar tdPadding">ปี/รุ่น</td>
+              <td class="tdcar tdPadding">แบบตัวถัง</td>
+              <td class="tdcar tdPadding">จำนวนที่นั่ง/ขนาด/น้ำหนัก</td>
+              <td class="tdcar tdPadding">รายการรถยนต์ ณ วันทำประกันภัย</td>
+            </tr>
+            <tr style="border: 1px solid black; line-height: 10px; !important">
+              <td class="tdcar tdPadding">1</td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+              <td class="tdcar tdPadding"></td>
+            </tr>
+          </table>
+          <table style="width:100%; border-right: 0.5px solid black; border-left: 1px solid black; border-top: 0px; !important">
+            <tr style="border: 1px solid black;">
+              <td style="border: 1px solid black">
+                <p style="margin-bottom: 20px">
+                  รายการตกแต่งเปลี่ยนแปลงรถยนต์เพิ่มเติม รายละเอียดอุปกรณ์ ซึ่งรวมในราคารถยนต์แล้ว (โปรดระบุรายละเอียด
+                </p>
+                <p>
+                  ............................................................................................................................................................................................................................................................................
+                </p>
+              </td>
+            </tr>
+          </table>
+          <table style="width:100%;border: 1px solid black">
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black; text-align: center; width: 25%" class="tdPadding">
+                ความรับผิดชอบต่อบุคคลภายนอก
+              </td>
+              <td style="border: 1px solid black; text-align: center; width: 30%" class="tdPadding">
+                รถยนต์เสียหาย สูญหาย ไฟไหม้
+              </td>
+              <td style="border: 1px solid black; text-align: center; width: 45%" class="tdPadding">
+                ความคุ้มครองตามเอกสารแนบท้าย
+              </td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black;">
+                <div class="row col">
+                  1) ความเสียหายต่อชีวิต ร่างกาย หรืออนามัยเฉพาะส่วนเกินวงเงินสูงสุดตาม พ.ร.บ.
+                </div>
+                <div class="row under-space">
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"></div>
+                  <div class="col-4">บาท/คน</div>
+                </div>
+                <div class="row">
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"></div>
+                  <div class="col-4">บาท/ครั้ง</div>
+                </div>
+                <br>
+                <div class="row col">
+                  2) ความเสียหายต่อทรัพย์สิน
+                </div>
+                <div class="row under-space">
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"></div>
+                  <div class="col-4">บาท/ครั้ง</div>
+                </div>
+                <div class="row col">
+                  &nbsp;&nbsp;&nbsp;&nbsp; 2.1 ความเสียหายส่วนแรก
+                </div>
+                <div class="row">
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 40px;"></div>
+                  <div class="col-4">บาท/ครั้ง</div>
+                </div>
+              </td>
+              <td style="border: 1px solid black;">
+                <div class="row col">
+                  1) ความเสียหายต่อรถยนต์
+                </div>
+                <div class="row col-12 under-space">
+                  <div class='col-8 under-line' ></div>
+                  <div class="col-4">บาท/ครั้ง</div>
+                </div>
+                <div class="row col">
+                  &nbsp;&nbsp;&nbsp;&nbsp; 1.1 ความเสียหายส่วนแรก
+                </div>
+                <div class="row col-12">
+                  <div class='col-8 under-line pl-4' ></div>
+                  <div class="col-4">บาท/ครั้ง</div>
+                </div>
+                <div class="row col">
+                  2) รถยนต์สูญหาย/ไฟไหม้
+                </div>
+                <div class="row col-12">
+                  {{#if (isHideFireDamage policyType)}}
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"><center>-</center></div>
+                  {{else}}
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"><center>{{coverage.carDamage.choose2FireDamage}}</center></div>
+                  {{/if}}
+                  <div class="col-4">บาท</div>
+                </div>
+                <br><br>
+                <div class="row">
+                  <span style="font-size: 45px; color: #6c6d70; padding-left: 40px;">ไม่รวม พ.ร.บ.</span>
+                </div>
+              </td>
+              <td style="border: 1px solid black;">
+                <div class="row col under-space">
+                  1) อุบัติเหตุส่วนบุคคล
+                </div>
+                <div class="row col under-space" style="margin-left: 10px;">
+                  1.1 เสียชีวิต สูญเสียอวัยวะ ทุพพลภาพถาวรสิ้นเชิง
+                </div>
+                <div class="row under-space" style="margin-left: 20px;">
+                  <div class="col-3">ก) ผู้ขับขี่ 1 คน</div>
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative;"></div>
+                  <div class="col">บาท</div>
+                </div>
+                <div class="row under-space" style="margin-left: 20px;">
+                  <div class="col-3">ข) ผู้โดยสาร</div>
+                  <div class="col-1" style="border-bottom: 1px dotted; width:100%; position: relative;"></div>
+                  <div class="col-1">คน</div>
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative;"></div>
+                  <div class="col">บาท/คน</div>
+                </div>
+                <div class="row col under-space" style="margin-left: 10px;">
+                  1.2 ทุพพลภาพชั่วคราว
+                </div>
+                <div class="row under-space" style="margin-left: 20px;">
+                  <div class="col-3">ก) ผู้ขับขี่ 1 คน</div>
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative;"></div>
+                  <div class="col">บาท/สัปดาห์</div>
+                </div>
+                <div class="row under-space" style="margin-left: 20px;">
+                  <div class="col-3">ข) ผู้โดยสาร</div>
+                  <div class="col-1" style="border-bottom: 1px dotted; width:100%; position: relative;"></div>
+                  <div class="col-1">คน</div>
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative;"></div>
+                  <div class="col">บาท/คน/สัปดาห์</div>
+                </div>
+                <div class="row col">
+                  2) ค่ารักษาพยาบาล
+                </div>
+                <div class="row under-space">
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"></div>
+                  <div class="col">บาท/คน</div>
+                </div>
+                <div class="row col">
+                  3) การรับประกันตัวผู้ขับขี่
+                </div>
+                <div class="row under-space">
+                  <div class="col" style="border-bottom: 1px dotted; width:100%; position: relative; margin-left: 20px;"></div>
+                  <div class="col">บาท/ครั้ง</div>
+                </div>
+              </td>
+            </tr>
+            <tr style="border: 1px solid black">
+              <td style="border: 1px solid black; text-align: center;" colspan="2">
+                เบี้ยประกันภัยตามความคุ้มครองหลัก.....................................................................บาท
+                <br>
+                (เบี้ยประกันภัยนี้ได้หักส่วนลดกรณีระบุชื่อผู้ขับขี่.......................................................บาทแล้ว)
+              </td>
+              <td style="border: 1px solid black;text-align: center">
+                <br>
+                เบี้ยประกันภัยตามเอกสารแนบท้าย..........................................บาท
+              </td>
+            </tr>
+          </table>
+        </table>
+        <div class="under-space" style="margin-top: 7px; text-indent: 70px;">
+          <span >ข้าพเจ้ารับรองว่า คำบอกกล่าวตามรายการข้างบนเป็นความจริงและให้ถือเป็นส่วนหนึ่งของสัญญาระหว่างข้าพเจ้ากับบริษัท โดยข้าพเจ้ามีความประสงค์ให้กรรมธรรม์มีผลบังคับตั้งแต่วันที่ <span style="border-bottom: 1px dotted; width:100% position: relative;">&emsp;&emsp; {{newPolicy.protectDate}} </span>เป็นต้นไป</span>
+        </div>
+        <div style='text-indent: 70px;'>
+          <span>
+            ข้าพเจ้ายินยอมให้บริษัทฯ จัดเก็บ ใช้ และเปิดเผยข้อเท็จจริงเกี่ยวกับข้อมูลของข้าพเจ้าต่อสำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัยเพื่อประโยชน์ในการกำกับดูแลธุรกิจประกันภัย
+          </span>
+        </div>
+        <div class='d-flex justify-content-between pt-4'>
+          <div>
+            ลงชื่อผู้เขียนหรือผู้พิมพ์......................................................
+          </div>
+          <div class='row items-end'>
+            <div class='col-12 d-flex justify-content-end'>
+              ลายมือชื่อผู้ขอเอาประกันภัย.....................................................
+            </div>
+            <div class='col-12 d-flex justify-content-end pt-3'>
+              วันที่..............เดือน.................พ.ศ........................
+            </div>
+          </div>
+
+        </div>
+        <br><u style="color: red">คำเตือนของสำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัย</u>
+        <br><span style="color: red">ให้ตอบคำถามข้างต้นตามความจริงทุกข้อ
+              หากผู้เอาประกันภัยปกปิดข้อความจริง หรือแถลงข้อความอันเป็นเท็จจะมีผลให้สัญญาประกันภัยนี้ตกเป็นโมฆียะ ซึ่งบริษัทมีสิทธิบอกล้างสัญญาประกันภัยตามประมวลกฏหมายแพ่งและพาณิชย์ มาตรา865</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
