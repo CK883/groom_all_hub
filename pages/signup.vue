@@ -1,0 +1,92 @@
+<script setup lang="ts">
+</script>
+
+<template>
+      
+    
+      <div class="flex flex-row justify-between items-center p-[30px] px-5 ">
+            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.66667 20C1.19444 20 0.798611 19.8403 0.479167 19.5208C0.159722 19.2014 0 18.8056 0 18.3333C0 
+17.8611 0.159722 17.4653 0.479167 17.1458C0.798611 16.8264 1.19444 16.6667 1.66667 16.6667H28.3333C28.8056 
+16.6667 29.2014 16.8264 29.5208 17.1458C29.8403 17.4653 30 17.8611 30 18.3333C30 18.8056 29.8403 19.2014 
+29.5208 19.5208C29.2014 19.8403 28.8056 20 28.3333 20H1.66667ZM1.66667 11.6667C1.19444 11.6667 0.798611 
+11.5069 0.479167 11.1875C0.159722 10.8681 0 10.4722 0 10C0 9.52778 0.159722 9.13194 0.479167 8.8125C0.798611 
+8.49306 1.19444 8.33333 1.66667 8.33333H28.3333C28.8056 8.33333 29.2014 8.49306 29.5208 8.8125C29.8403 9.13194 
+30 9.52778 30 10C30 10.4722 29.8403 10.8681 29.5208 11.1875C29.2014 11.5069 28.8056 11.6667 28.3333 11.6667H1.66667ZM1.66667
+ 3.33333C1.19444 3.33333 0.798611 3.17361 0.479167 2.85417C0.159722 2.53472 0 2.13889 0 1.66667C0 1.19444 
+ 0.159722 0.798611 0.479167 0.479167C0.798611 0.159722 1.19444 0 1.66667 0H28.3333C28.8056 0 29.2014 0.159722 
+ 29.5208 0.479167C29.8403 0.798611 30 1.19444 30 1.66667C30 2.13889 29.8403 2.53472 29.5208 2.85417C29.2014
+                              3.17361 28.8056 3.33333 28.3333 3.33333H1.66667Z" fill="#F97316"/>
+            </svg>
+            <span class="text-2xl font-bold">All Hub'z</span>
+            <div class=" flex items-center justify-center">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.23307 24.741C7.59661 23.6983 9.12057 22.8761 10.8049 22.2746C12.4893 21.673 14.2539 21.3722 16.0987 21.3722C17.9435 21.3722 19.7081 21.673 21.3924 22.2746C23.0768 22.8761 24.6008 23.6983 25.9643 24.741C26.9001 23.6448 27.6286 22.4016 28.15 21.0113C28.6714 19.621 28.932 18.1372 28.932 16.5597C28.932 13.0038 27.6821 9.97597 25.1823 7.47614C22.6825 4.97631 19.6546 3.7264 16.0987 3.7264C12.5428 3.7264 9.51493 4.97631 7.0151 7.47614C4.51527 9.97597 3.26536 13.0038 3.26536 16.5597C3.26536 18.1372 3.52604 19.621 4.04739 21.0113C4.56874 22.4016 5.2973 23.6448 6.23307 24.741ZM16.0987 18.1639C14.5213 18.1639 13.1911 17.6225 12.1083 16.5397C11.0255 15.4569 10.4841 14.1267 10.4841 12.5493C10.4841 10.9719 11.0255 9.64176 12.1083 8.55895C13.1911 7.47614 14.5213 6.93473 16.0987 6.93473C17.6761 6.93473 19.0062 7.47614 20.0891 8.55895C21.1719 9.64176 21.7133 10.9719 21.7133 12.5493C21.7133 14.1267 21.1719 15.4569 20.0891 16.5397C19.0062 17.6225 17.6761 18.1639 16.0987 18.1639ZM16.0987 32.6014C13.8796 32.6014 11.7942 32.1803 9.84244 31.3381C7.89071 30.4959 6.19296 29.353 4.74921 27.9092C3.30546 26.4655 2.16249 24.7677 1.32031 22.816C0.47812 20.8642 0.0570259 18.7788 0.0570259 16.5597C0.0570259 14.3406 0.47812 12.2552 1.32031 10.3035C2.16249 8.35175 3.30546 6.654 4.74921 5.21025C6.19296 3.7665 7.89071 2.62354 9.84244 1.78135C11.7942 0.93916 13.8796 0.518066 16.0987 0.518066C18.3178 0.518066 20.4032 0.93916 22.3549 1.78135C24.3067 2.62354 26.0044 3.7665 27.4482 5.21025C28.8919 6.654 30.0349 8.35175 30.8771 10.3035C31.7193 12.2552 32.1404 14.3406 32.1404 16.5597C32.1404 18.7788 31.7193 20.8642 30.8771 22.816C30.0349 24.7677 28.8919 26.4655 27.4482 27.9092C26.0044 29.353 24.3067 30.4959 22.3549 31.3381C20.4032 32.1803 18.3178 32.6014 16.0987 32.6014ZM16.0987 29.3931C17.5157 29.3931 18.8525 29.1859 20.1091 28.7715C21.3657 28.357 22.5154 27.7622 23.5581 26.9868C22.5154 26.2115 21.3657 25.6166 20.1091 25.2022C18.8525 24.7878 17.5157 24.5806 16.0987 24.5806C14.6817 24.5806 13.3449 24.7878 12.0883 25.2022C10.8317 25.6166 9.68203 26.2115 8.63932 26.9868C9.68203 27.7622 10.8317 28.357 12.0883 28.7715C13.3449 29.1859 14.6817 29.3931 16.0987 29.3931ZM16.0987 14.9556C16.7938 14.9556 17.3687 14.7283 17.8232 14.2738C18.2777 13.8193 18.5049 13.2445 18.5049 12.5493C18.5049 11.8542 18.2777 11.2794 17.8232 10.8248C17.3687 10.3703 16.7938 10.1431 16.0987 10.1431C15.4036 10.1431 14.8287 10.3703 14.3742 10.8248C13.9197 11.2794 13.6924 11.8542 13.6924 12.5493C13.6924 13.2445 13.9197 13.8193 14.3742 14.2738C14.8287 14.7283 15.4036 14.9556 16.0987 14.9556Z" fill="#D4D4D8"/>
+                  </svg>
+            </div>
+
+      </div>
+      
+                  
+      
+      <div class=" p-5 ">
+      
+      <div class="text-center font-bold text-2xl mt-5 ml-3">
+      <div class="flex items-center justify-center space-x-2">
+      <span class="text-main-primary" >Sign Up</span> 
+      <span>to join member</span>
+      </div>
+      </div>
+<div class="container mx-auto mt-10 bg-white ">
+<div name="body" class="py-5">
+                  
+                  
+                
+                 
+        <div class="grid gap-x-2 gap-y-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-5  ">
+            <div class="text-start ">
+                  <span class="font-bold block">Name</span>
+                  <input type="text" class="border border-base-gray-darken  rounded-lg mx-auto" style="width: 100%;" placeholder="Name">
+            </div>
+
+            <div class="text-start ">
+                  <span class="font-bold block">Surname</span>
+                  <input type="text" class=" border border-base-gray-darken rounded-lg mx-auto" style="width: 100%;" placeholder="Surname">
+            </div>
+            <div class="text-start">
+                  <span class="font-bold block">Email</span>
+                  <input type="text" class="border border-base-gray-darken rounded-lg mx-auto" style="width: 100%;" placeholder="Ex. email@email.com">
+            </div>
+            <div class="text-start">
+                  <span class="font-bold block">Phone number</span>
+                  <input type="text" class="border border-base-gray-darken rounded-lg mx-auto" style="width: 100%;" placeholder="000-000-0000">
+            </div>
+            <div class="text-start">
+                  <span class="font-bold block">Date of birth</span>
+                  <input type="date" class="border border-base-gray-darken rounded-lg  mx-auto " style="width: 100%;">
+            </div>
+            <div class="text-start">
+                  <span class="font-bold block">Occupation</span>
+                  <select class=" border border-base-gray-darken rounded-lg mx-auto p-1" style="width: 100%;">
+                  <option value="">-Select-</option>
+                  <option value="programer">Software Deverlop</option>
+                  <option value="ui/ux">UXUI Designer</option>
+                  <option value="tester">Software Tester</option>
+                  </select>
+            </div>
+        </div>
+
+ 
+</div>
+</div>
+<div class="text-center mr-3 mt-5">
+      <button class="rounded-full bg-main-primary text-white w-[370px] h-[48px]">Next</button>
+</div>
+<div class="text-xs text-center my-5">
+      <span>©2024 All Hub Co., Ltd All rights reserved.</span>
+</div>
+</div>
+
+ 
+   
+</template>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --main-primary: #0033A2;
+    --main-primary: #007bff;
     --base-gray-lighten: #f0f0f0;
     --base-gray-darken: #A7A7A8;
 }
@@ -39,13 +39,25 @@ select {
 }
 
 input {
-    height: 34px;
-    @apply cursor-pointer
+    height: 48px;
+    @apply cursor-pointer border !border-[#CBD5E1] text-[#94A3B8] placeholder-[#94A3B8]
+}
+
+input:focus {
+   @apply !border-main-primary !ring-main-primary 
+}
+
+select:focus {
+    @apply !border-main-primary !ring-main-primary 
 }
 
 select {
-    @apply cursor-pointer
+    height: 48px;
+    @apply cursor-pointer 
 }
+
+
+
 
 
 /* width */

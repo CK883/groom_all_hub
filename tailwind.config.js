@@ -13,7 +13,7 @@ export default {
     extend: {
       colors: {
         main: {
-          primary: '#0033A2',
+          primary: '#F97300',
           secondary: '#fcaf17',
           tertiary: '#2B375F',
           info: '#4f88ff',
@@ -22,7 +22,7 @@ export default {
           excel: '#0d7239',
           success: '#7ac332',
           base: '#f9fbff',
-          danger: '#f13131',
+          danger: '#DC2626',
           'base-line-man': '#fbfbfb',
           blue: '#0085ff',
           scania: '#394156',
@@ -35,7 +35,9 @@ export default {
           black: '#000000',
           'gray-lighten': '#f0f0f0',
           'gray-darken': '#A7A7A8',
-          'gray-default': '#D9D7D5'
+          'gray-default': '#D9D7D5',
+          'gray-state-300' : '#CBD5E1',
+          'gray-bg' : '#F8FAFC'
         }
       },
       fontSize: {
