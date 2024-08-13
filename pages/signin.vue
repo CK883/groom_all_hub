@@ -51,6 +51,7 @@
                 <div class="flex flex-row justify-between items-center p-2">
                   <input type="checkbox" id="mycheckbox" class="rounded">
                   <label for="mycheckbox" class="mr-[80px]">Remember Me</label>
+                  
                   <button class="text-main-blue text-nowrap font-bold">
                     <span>Forgot Password?</span>
                   </button>
